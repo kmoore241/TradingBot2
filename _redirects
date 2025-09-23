@@ -1,0 +1,29 @@
+# Netlify Redirects Configuration for Superalgos
+
+# API Routes
+/api/*  /.netlify/functions/platform  200
+
+# Dashboard routes
+/dashboards/*  /Dashboards/UI/vueComponentsBuilt/:splat  200
+
+# Social Trading routes
+/social-trading/*  /Social-Trading/Vue-UI/dist/:splat  200
+
+# Static assets
+/Projects/*  /Projects/:splat  200
+/Platform/*  /Platform/:splat  200
+
+# Workspace selection
+/selection  /selection.html  200
+/console  /console.html  200
+
+# SPA fallback for dashboard
+/dashboard  /Dashboards/UI/vueComponentsBuilt/index.html  200
+/dashboard/*  /Dashboards/UI/vueComponentsBuilt/index.html  200
+
+# SPA fallback for social trading
+/social  /Social-Trading/Vue-UI/dist/index.html  200
+/social/*  /Social-Trading/Vue-UI/dist/index.html  200
+
+# Default fallback
+/*  /index.html  200
