@@ -2,6 +2,7 @@
   base = "."
   publish = "dist"
   command = "npm run build:netlify"
+  environment = { HUSKY = "0" }
 
 [build.environment]
   NODE_ENV = "production"

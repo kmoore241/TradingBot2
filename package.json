@@ -18,7 +18,7 @@
     "lintAll": "eslint . --ext .js",
     "lintFile": "eslint --ext .js",
     "postsetup": "npm start",
-    "prepare": "husky install",
+    "prepare": "node -e \"try{require('husky').install()}catch(e){console.log('skip husky:', e?.message)}\",
     "presetup": "git checkout develop && git pull upstream develop",
     "setup": "node setup noShortcuts",
     "setupWithTf": "node setupWithTf noShortcuts",
@@ -63,6 +63,7 @@
     "ethereumjs-common": "^1.5.2",
     "ethereumjs-tx": "^2.1.2",
     "ethers": "^5.5.3",
+    "husky": "^9.0.0"
     "http": "0.0.1-security",
     "https": "^1.0.0",
     "hyperquest": "^2.1.3",
