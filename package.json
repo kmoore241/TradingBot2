@@ -18,7 +18,7 @@
     "lintAll": "eslint . --ext .js",
     "lintFile": "eslint --ext .js",
     "postsetup": "npm start",
-    "prepare": "node -e \"try{require('husky').install()}catch(e){console.log('skip husky:', e?.message)}\",
+    "prepare": "node -e \"try{require('husky').install()}catch(e){console.log('skip husky:', e?.message)}\"",
     "presetup": "git checkout develop && git pull upstream develop",
     "setup": "node setup noShortcuts",
     "setupWithTf": "node setupWithTf noShortcuts",
