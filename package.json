@@ -12,7 +12,7 @@
     "build:vercel": "npm run build:dashboards && npm run build:social-trading",
     "build:dashboards": "webpack --mode production --config ./Dashboards/webpack.config.js",
     "build:social-trading": "cd ./Social-Trading/Vue-UI && npm install --no-audit --no-fund --legacy-peer-deps && npm run build",
-    "build:static": "mkdir -p dist/dashboards dist/social-trading && cp -r Dashboards/UI/vueComponentsBuilt/* dist/dashboards/ && cp -r Social-Trading/Vue-UI/dist/* dist/social-trading/ && (ls *.html >/dev/null 2>&1 && cp *.html dist/ || true)"
+  "build:static": "mkdir -p dist/dashboards dist/social-trading && cp -r Dashboards/UI/vueComponentsBuilt/* dist/dashboards/ && cp -r Social-Trading/Vue-UI/dist/* dist/social-trading/ && (ls *.html >/dev/null 2>&1 && cp *.html dist/ || true)",
     "dist": "electron-builder -c build/electron-builder.json",
     "installSocialTradingReact": "cd ./Social-Trading/React-UI && npm ci",
     "lintAll": "eslint . --ext .js",
