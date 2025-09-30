@@ -2,7 +2,7 @@
   "name": "vite-project",
   "version": "0.0.0",
   "private": true,
- "scripts": {
+  "scripts": {
     "serve": "vite preview",
     "build": "vite build",
     "install:vue-cli": "npm list -g @vue/cli || npm install -g @vue/cli",
@@ -24,10 +24,10 @@
     "webfontloader": "^1.0.0"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^4.0.0",
+    "@vitejs/plugin-vue": "^5.0.0",
     "@vue/cli-plugin-vuex": "^5.0.6",
-    "vite": "^4.0.1",
-    "vite-plugin-vuetify": "^1.0.0-alpha.12",
+    "vite": "^5.4.0",
+    "vite-plugin-vuetify": "^2.1.2",
     "vue-cli-plugin-vuetify": "~2.5.8"
   },
   "type": "module"
