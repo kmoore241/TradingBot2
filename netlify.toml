@@ -2,12 +2,13 @@
   base = "."
   publish = "dist"
   command = "npm run build:netlify"
-  environment = { HUSKY = "0" }
+
 
 [build.environment]
   NODE_ENV = "production"
   PLATFORM_MODE = "production"
   NODE_VERSION = "18"
+    HUSKY = "0"
 
 [[redirects]]
   from = "/dashboards/*"
