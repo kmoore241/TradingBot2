@@ -12,12 +12,12 @@
 
 [[redirects]]
   from = "/dashboards/*"
-  to = "/Dashboards/UI/vueComponentsBuilt/:splat"
+  to = "/dashboards/:splat"
   status = 200
 
 [[redirects]]
   from = "/social-trading/*"
-  to = "/Social-Trading/Vue-UI/dist/:splat"
+  to = "/social-trading/:splat"
   status = 200
 
 [[redirects]]
