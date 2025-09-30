@@ -5,10 +5,10 @@
 
 
 [build.environment]
-  NODE_ENV = "production"
-  PLATFORM_MODE = "production"
+  NPM_CONFIG_PRODUCTION = "false"
+  CI = "true"
   NODE_VERSION = "18"
-    HUSKY = "0"
+  HUSKY = "0"
 
 [[redirects]]
   from = "/dashboards/*"
