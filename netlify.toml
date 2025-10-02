@@ -31,8 +31,8 @@
   status = 200
 
 [functions]
-  directory = "netlify/functions"
-  node_bundler = "nft"
+  node_bundler = "esbuild"
+  external_node_modules = ["simple-update-notifier", "semver"]
 
 [[headers]]
   for = "/*"
